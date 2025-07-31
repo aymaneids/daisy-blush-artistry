@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Calendar, Eye } from "lucide-react";
 import heroImage from "@/assets/hero-salon.jpg";
 
 const HeroSection = () => {
@@ -31,9 +31,9 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="elegant" size="lg" className="font-medium text-base" asChild>
-              <Link to="/contact">
-                <Calendar className="w-5 h-5" />
+            <Button size="lg" className="shadow-lg" asChild>
+              <Link to="/booking">
+                <Calendar className="w-5 h-5 mr-2" />
                 Book Your Appointment
               </Link>
             </Button>

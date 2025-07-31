@@ -48,9 +48,11 @@ const Header = () => {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:flex">
-            <Button variant="elegant" size="sm" className="font-medium">
-              <Calendar className="w-4 h-4" />
-              Book Appointment
+            <Button variant="elegant" size="sm" className="font-medium" asChild>
+              <Link to="/booking">
+                <Calendar className="w-4 h-4 mr-2" />
+                Book Appointment
+              </Link>
             </Button>
           </div>
 
@@ -85,9 +87,11 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button variant="elegant" size="sm" className="font-medium w-full">
-                <Calendar className="w-4 h-4" />
-                Book Appointment
+              <Button variant="elegant" size="sm" className="font-medium w-full" asChild>
+                <Link to="/booking">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  Book Appointment
+                </Link>
               </Button>
             </nav>
           </div>
