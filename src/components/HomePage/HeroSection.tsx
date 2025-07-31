@@ -37,7 +37,7 @@ const HeroSection = () => {
                 Book Your Appointment
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="font-medium text-base" asChild>
+            <Button variant="outline" size="lg" className="font-medium text-base text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-white" asChild>
               <Link to="/portfolio">
                 <Eye className="w-5 h-5" />
                 Explore Our Work
